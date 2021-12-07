@@ -74,3 +74,26 @@ Threat Management
 ## Upgrades
 
 ## Using Patronus
+### Setup
+#### Configuration Management
+#### Setup Check
+#### Validation
+- Threat Management
+  - All URLs must be HTTPS
+  - Processed data will be visible in ss_threat
+  - If no data is visible, review cim_modactions for failures related to processing due to URL issues or regex
+- Asset visibility
+  - Processed data will be visible in ss_asset
+  - Dashboard visibility in Reference>Assets
+- Identity visibility
+  - Processed data will be visible in ss_identity
+  - Dashboard visibility in Reference>Identities
+- Users
+  - Users are visible in dropdowns on Incident Management for assignment
+  - Users update once an hour or can be triggerred by running 'Patronus User - Lookup Gen'
+
+### How Scoring Works
+- Risk Generation
+- Incident Generation
+
+### Filter Management

@@ -162,11 +162,11 @@ Corporate Subnet configuration refers to the location of IP CIDR ranges in your 
 
 ## Using Patronus
 ### How Scoring Works
-#### Risk Generation (SSIG)
+#### Risk Generation (SSRG)
 
 Patronus is built on the concept of using scores to assess the risk in an enviornment. Correlation searches are used to identify issues and assign scores to objects that are considered risky. Each search has a base score and reliability associated with it.  Reliability helps reduce the score for searches that are noisy or unreliable. For each hit the search gets, a score based on the base score of the search and its reliability gets added to the risk object that triggered it. 
 
-#### Incident Generation (SSRG)
+#### Incident Generation (SSIG)
 
 As scores accumulate and exceed 100 (default) an incident is generated.  An incident is a cross-layer view if risk generations against an object.  Instead of seeing each individual score generated and then having to review it, they are bubbled up to a sumamrized view and then presented to the analyst as a picture of activitues for a risk object.  This allows a story to be told instead of a single page.
 

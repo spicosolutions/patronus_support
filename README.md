@@ -73,10 +73,9 @@ Threat Management
 
 ## Upgrades
 
-## Using Patronus
-### Setup
-#### Configuration Management
-##### Asset Management
+## Setup
+### Configuration Management
+#### Asset Management
 Assets refer to the system in which Patronus is responsible for protecting.  The source(s) of asset data may come from many sourcing including Active Directory, Qualys, Tenable, JAMF, etc.  These sources are then merged into a single working copy with evaluation of each data element giving priority to data values from the more severe to less. 
 
 This form allows for the definition of where to find the asset data that was created and stored in a lookup table.  Recommendation would be to create a Saved Search that incrementally creates the lookup table using the fields as defined below.  Please make sure that the lookup table has permissions set to Global.
@@ -95,7 +94,7 @@ Fields used to create the asset list are defined below.
 
 File names MUST be in the format of patronus_asset_SYSTEM.csv
 
-##### Identity Management
+#### Identity Management
 Identities refer to the users in which Patronus is responsible for protecting.  The source(s) of identity data may come from many sourcing such as Active Directory or Okta.  These sources are then merged into a single working copy with evaluation of each data element giving priority to data values from the more severe to less. 
 
 This form allows for the definition of where to find the asset data that was created and stored in a lookup table.  Recommendation would be to create a Saved Search that incrementally creates the lookup table using the fields as defined below.  Please make sure that the lookup table has permissions set to Global.
@@ -117,7 +116,7 @@ Fields used to create the asset list are defined below.
 
 File names MUST be in the format of patronus_identity_SYSTEM.csv
 
-##### Threat Feed Downloads
+#### Threat Feed Downloads
 There are three different types of threat feeds supported by Patronus: ip, domain, file
 | Type | Description |
 | ----- | ----------- |
@@ -135,7 +134,7 @@ When adding a new threat feed it is important to understand the data you are ins
 | regex  | Regular expression to parse the data and to define the fields necessary for the typ of feed.  Depending on feed use $1 and $2 to correspond with the headers defined |
 | headers  | define the headers/values represented in the threat feed |
 
-##### Corporate Subnets
+#### Corporate Subnets
 Corporate Subnet configuration refers to the location of IP CIDR ranges in your organization to allow Patronus to better understand threats.
 
 | Field | Description |
@@ -145,8 +144,8 @@ Corporate Subnet configuration refers to the location of IP CIDR ranges in your 
 | latitude | he angular distance of a place north or south of the earth's equator, or of a celestial object north or south of the celestial equator, usually expressed in degrees and minutes |
 | longitude | the angular distance of a place east or west of the meridian at Greenwich, England, or west of the standard meridian of a celestial object, usually expressed in degrees and minutes. |
 
-#### Setup Check
-#### Validation
+### Setup Check
+### Validation
 - Threat Management
   - All URLs must be HTTPS
   - Processed data will be visible in ss_threat
@@ -161,6 +160,7 @@ Corporate Subnet configuration refers to the location of IP CIDR ranges in your 
   - Users are visible in dropdowns on Incident Management for assignment
   - Users update once an hour or can be triggerred by running 'Patronus User - Lookup Gen'
 
+## Using Patronus
 ### How Scoring Works
 - Risk Generation
 - Incident Generation

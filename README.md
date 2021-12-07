@@ -1,4 +1,6 @@
 # Patronus
+![alt text](https://i.imgur.com/apT3WtE.jpg)
+
 
 ## Introduction
 ### About

@@ -145,6 +145,8 @@ Corporate Subnet configuration refers to the location of IP CIDR ranges in your 
 | longitude | the angular distance of a place east or west of the meridian at Greenwich, England, or west of the standard meridian of a celestial object, usually expressed in degrees and minutes. |
 
 ### Setup Check
+![Imgur](https://i.imgur.com/7iYIXvL.png)
+
 ### Validation
 - Threat Management
   - All URLs must be HTTPS
@@ -201,5 +203,7 @@ Options are similar to the Filter Management panel in the Risk Scoreboard, howev
 ### Creating Risk Generators
 
 ### Incident Management
+![Imgur](https://i.imgur.com/DVR1glQ.png)
 
 ### Scoreboard
+![Imgur](https://i.imgur.com/4LDSgMZ.png)

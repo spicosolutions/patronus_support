@@ -186,9 +186,9 @@ Upon saving, you will see text stating the filter has been added in green.  Poin
 
 2. Configuration Management
 Filtering may be accessed in Configuration Management by going to Configuration->Configuration Management->Search Filters. 
-![img]https://i.imgur.com/CT3URai.png[/img]
+![Imgur](https://i.imgur.com/CT3URai.png)
 As seen above, Search Filters represent all filters that have been created. The difference here is that there is no need to review and deep dive in the Risk Scoreboard.  Filters may be added directly via the UI by clicking "Add".  Upon clicking the user will be presented with the below screen:
-![img]https://i.imgur.com/Frbmc94.png[/img]
+![Imgur](https://i.imgur.com/Frbmc94.png)
 Options are similar to the Filter Management panel in the Risk Scoreboard, however, this UI gives the user the most flexibility to add filters that include wildcards as needed and to specify start and stop dates.
 - Risk Rule - id assigned to each search beginning with SSRG###
 - Field - specific field that will be evaluated as part of the filter

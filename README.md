@@ -171,6 +171,32 @@ Patronus is built on the concept of using scores to assess the risk in an envior
 As scores accumulate and exceed 100 (default) an incident is generated.  An incident is a cross-layer view if risk generations against an object.  Instead of seeing each individual score generated and then having to review it, they are bubbled up to a sumamrized view and then presented to the analyst as a picture of activitues for a risk object.  This allows a story to be told instead of a single page.
 
 ### Filter Management
+A key part to any SIEM is the ability to eliminate noise from generating. Patronus approaches filter management logically where risk generations will still occur on content that is filtered but will not be included in incidents being generated.  Filtering is also centralized rather than "hard-filtering" at the rule or correlation search level.  The advantage to centralization is the ability to manage all filters in one place.  Hard-filtering is still available at the rule level but is only recommended in situations where noise is overwhelming and not relevant from a security standpoint.
+
+Filter management can be accessed in two separate ways:
+1. Risk Scoreboard
+![Imgur](https://i.imgur.com/DSrIVjl.png)
+As risk are being reviewed on the risk scoreboard, at the Deep Dive level the Filter Management panel (as shown) may be used.  This panel leverages the results of the deep dive for adding simple filters based on values.  The form requires:
+- Field - specific field that will be evaluated as part of the filter
+- Value - the value to be filtered as specified in the deep dive
+- Filter Until - date specification to keep the filter active until.  This is important since filters should almost never be permanant and shold be reviewed from time to time
+- Note - reason for the filter.  When the filter is saved the user name of the person creating the filter will be prepended
+
+Upon saving, you will see text stating the filter has been added in green.  Point forward the item(s) filtered will not included in scoring to determing incident generation.  At the top of the risk scoreboard, you may select "Include Filtered Data" to make the data visible in the scoreboard.
+
+2. Configuration Management
+Filtering may be accessed in Configuration Management by going to Configuration->Configuration Management->Search Filters. 
+![img]https://i.imgur.com/CT3URai.png[/img]
+As seen above, Search Filters represent all filters that have been created. The difference here is that there is no need to review and deep dive in the Risk Scoreboard.  Filters may be added directly via the UI by clicking "Add".  Upon clicking the user will be presented with the below screen:
+![img]https://i.imgur.com/Frbmc94.png[/img]
+Options are similar to the Filter Management panel in the Risk Scoreboard, however, this UI gives the user the most flexibility to add filters that include wildcards as needed and to specify start and stop dates.
+- Risk Rule - id assigned to each search beginning with SSRG###
+- Field - specific field that will be evaluated as part of the filter
+- Value - the value to be filtered.  Wildcards allowed.
+- Start Epoch - epoch timestamp representing the start time for filtering (https://www.epochconverter.com/)
+- End Epoch - epoch timestamp representing the end time for filtering (https://www.epochconverter.com/)
+- Note - reason for the filter.  When the filter is saved the user name of the person creating the filter will be prepended
+- Disabled - 0=false, 1=true
 
 ### Creating Risk Generators
 

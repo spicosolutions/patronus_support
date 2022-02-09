@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.5.7 (08/02/2022)
+## 1.5.5 (01/01/2022)
 - [**closed**] SSRG030 - First Time Seen Running Windows Service [#40](https://github.com/spicosolutions/thepeoplessiem/issues/40)
 - [**wontfix**] `sysmon` macro  [#36](https://github.com/spicosolutions/thepeoplessiem/issues/36)
 - [**wontfix**] SSRG023 - New Logon Type for User [#26](https://github.com/spicosolutions/thepeoplessiem/issues/26)
